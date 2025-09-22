@@ -1,14 +1,19 @@
 public class Bottle {
 
-    /*Das Innere, das "wie" unsere Klasse funktioniert, wollen wir nach außen verbergen. Dadurch können wir das "wie" wir etwas programmieren jederzeit ändern, ohne das wir Änderungen dort wo unsere Klasse verwendet wird, vornehmen müssen (Kapselung). Daher sind unsere Attribute im Normalfall private!
+    /*
+    Das Innere, das "wie" unsere Klasse funktioniert, wollen wir nach außen verbergen. 
+    Dadurch können wir das "wie" wir etwas programmieren jederzeit ändern, ohne das wir Änderungen dort wo unsere Klasse verwendet wird, 
+    vornehmen müssen (Kapselung). Daher sind unsere Attribute im Normalfall private!
      */
     private double volume;
     private double currentLevel;
     private boolean madeOfPlastic;
 
-  /* Die Attribute (Eigenschaften) eines Objekts werden über Methoden geändert und nicht direkt. Dadurch haben wir volle Kontrolle und können beliebigen Code ausführen wenn Attribute ausgelesen oder geändert werden (z.B. Überprüfungen). Auch kann ich leicht bestimmen, dass z.B. Werte nur gelesen, aber von außerhalb nicht geändert werden dürfen!
-
+  /* Die Attribute (Eigenschaften) eines Objekts werden über Methoden geändert und nicht direkt. 
   Diese Methoden nennen wir Zugriffsmethoden bzw. Getter- und Setter-Methoden.
+  
+  Dadurch haben wir volle Kontrolle und können beliebigen Code ausführen wenn Attribute ausgelesen oder geändert werden (z.B. Überprüfungen). 
+  Auch kann ich leicht bestimmen, dass z.B. Werte nur gelesen, aber von außerhalb nicht geändert werden dürfen!
   */
 
     /*
@@ -37,7 +42,7 @@ public class Bottle {
     }
 
     /*
-      Bei Boolean nennt man die getter-Methoden meist leicht anders. Statt get+Variablennamen schreibt man is+Variablennamen (Einzahl) bzw. has+Variablennamen (Mehrzahl)
+      Bei Boolean Attributen nennt man die getter-Methoden meist leicht anders. Statt get+Variablennamen schreibt man is+Variablennamen (Einzahl) bzw. has+Variablennamen (Mehrzahl)
     */
     public boolean isMadeOfPlastic(){
         return madeOfPlastic;
